@@ -1,0 +1,245 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: .4px;
+    font-family: Helvetica, Arial, cursive;
+    font-size: 16px;
+    line-height: 1.5; 
+}
+
+h1{
+    font-size: 25px;
+    align-items: center;   
+}
+
+.customized-bg{
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+}
+
+/* Navigation bar section. */
+.nav-button {
+    float: left;
+    font-size: 13px;
+    display:inline; 
+}
+
+.nav-button a {
+    display: block; 
+    color: black;
+    text-align: center; 
+    padding: 6px 20px;
+    text-decoration: none;
+}
+
+.nav-button a:hover {
+    color: #9ca8b8;
+}
+
+.navigation > ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#f9fafa;
+}
+
+
+
+/* Main canvas section. */
+.page-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.author-name {
+    color: #965454;
+    font-size: 30px;
+    align-items: center; 
+}
+
+.occupation {
+    color: #a27e7e;
+    font-size: 15px;
+    align-items: center;
+}
+  
+/* Style the header */
+.header {
+    background-color: #f9fafa;
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* Container for flexboxes */
+.container-row {
+    display: flex;
+    flex-direction: column;
+    /* display: flex; */
+}
+
+/* Create equal columns that sits next to each other */
+.container-column{
+    padding: 10px;
+   background-color:#d7e1e5; 
+   display: flex;
+   align-items: left;
+   flex-direction: column;
+   justify-content: center;  
+}
+
+.footer {
+    display:flex;
+    background-color: #f9fafa;
+    padding: 10px;
+    text-align: center;
+    min-width: 10px;
+    justify-content: center;
+}
+
+.title{
+    color:lightcoral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-font{
+    font-family: 'Cinzel', serif;
+}
+
+.container-contact-column{
+    padding: 10px;
+   background-color:#ead0d1; 
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+}
+
+i{
+    color: #965454;
+    font-size: 110%;
+}
+
+i:hover{
+    color:#a27e7e;
+}
+
+i:link{
+    color: #965454;
+}
+
+i:visited{
+    color: #965454;
+}
+
+.art-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.art-column {
+    background-color:#faead3;
+    flex: 100%;
+    max-width: 100%;
+    padding: 10px 20px;
+}
+
+.art-column img {
+    margin-top: 10px;
+    vertical-align: middle;
+    width: 100%
+}
+
+.art-column-discription{
+    padding: 10px;
+   background-color:#d7e1e5; 
+   display: flex;
+   align-items: left;
+   flex-direction: column;
+   justify-content: center;
+}
+
+@media screen and (max-width: 750px) and (orientation: landscape){
+    .nav-button {
+        float: center;
+        font-size: 13px;
+    }
+    .nav-button a {
+        padding: 10px 25px;
+    }
+    .container-row {
+        flex: 40%;
+    }
+    .container-contact-column {
+        flex: 40%;
+    }
+    .art-column {
+        flex: 40%;
+        max-width: 40%;
+    }
+  }
+
+@media screen and (min-width: 750px) {
+    .nav-button {
+        float: left;
+        font-size: 15px;
+    }
+    .nav-button a {
+        padding: 14px 50px;
+    }
+
+    .container-row {
+        flex: 50%;
+        flex-direction: row;
+    }
+    .container-contact-column {
+        flex: 50%;
+        align-items: left;
+    }
+    
+    .art-column {
+        flex: 40%;
+        max-width: 40%;
+    }
+
+    h1{
+        font-size: 25px;  
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+    .container-row {
+        flex: 100%;
+        flex-direction: row;
+    }
+    .container-contact-column {
+        flex: 100%;
+        align-items: left;
+    }
+    .art-column {
+        flex: 25%;
+        min-width: 25%;
+    }
+    
+    .author-name {
+        font-size: 35px;
+        align-items: center; 
+    }
+
+    .occupation {
+        font-size: 20px;
+        align-items: center;
+    }
+  }
